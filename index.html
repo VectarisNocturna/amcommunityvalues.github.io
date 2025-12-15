@@ -3,12 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+
         <title>AMCV</title>
     </head>
     <body>
-        <h1>This website is under development. - Vectaris</h1>
 
-        <i><h5>also hi Divestriaaa!</h5></i>
+        <img id="toggleDarkMode" draggable="false" src="https://cdn-icons-png.flaticon.com/512/702/702471.png" style="height: 30px; width: 30px; position: absolute; top: 10px; left: 10px; cursor: pointer; user-select: none;">
 
+        <div class="card" style="margin: auto; width: 50%; border-radius: 10px; padding: 1px;">
+            <h2 style="text-align: center; font-family: 'Fira Code', monospace;">Adopt me community values</h2>
+        </div>
+        
+        <div class="card" style="margin: 10px auto 0 auto; width: 90%; max-width: 1600px; max-height: 1000px; border-radius: 10px; padding: 10px 10px 20px 10px;">
+            <label for="value_type" style="font-family: 'Fira Code', monospace;">Choose your adopt me value calculator: </label>
+            <select name="value_type" id="calculatorValueType" required="true">
+                <option value="Elvebredd">Elvebredd</option>
+                <option value="AdoptMeValuesGG">AdoptMeValues.gg</option>
+                <option value="AMVGG">amvgg</option>
+                <option value="AdoptMeTradingValues">AdoptMeTradingValues</option>
+            </select>
+
+            <div class="card" style="margin: 30px auto 10px auto; width: 90%; height: 50%; border-radius: 10px; padding: 10px; border: 1px solid var(--card-text);">
+                <label>Still making the item selector and suchhh.... -.-</label>
+            </div>
+        </div>
+
+        <label style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%) translateY(-25%); text-align: center; font-family: 'Fira Code', monospace;">Website made by Vectaris</label>
+
+        <script src="main.js"></script>
+        <script src="calculator.js"></script>
     </body>
 </html>
