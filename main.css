@@ -1,1 +1,40 @@
+:root {
+    --card-bg: #ebebeb;
+    --card-text: #24292f;
+    --body-bg: #ffffff;
+    --body-text: #24292f;
+}
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --card-bg: #161b22;
+        --card-text: #c9d1d9;
+        --body-bg: #12161b;
+        --body-text: #c9d1d9;
+    }
+}
+
+.dark {
+    --card-bg: #161b22;
+    --card-text: #c9d1d9;
+    --body-bg: #12161b;
+    --body-text: #c9d1d9;
+}
+
+.card {
+  background: var(--card-bg);
+  color: var(--card-text);
+}
+
+body {
+    background: var(--body-bg);
+    color: var(--body-text);
+}
+
+select {
+    background: var(--card-bg);
+    color: var(--card-text);
+    border: 1px solid var(--card-text);
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+}
